@@ -1,6 +1,5 @@
-export default (function {
+export default (function() {
     let options = {
-        root: document.querySelector("body"),
         rootMargin: "0px",
         threshold: 1.0,
     }
@@ -18,4 +17,4 @@ export default (function {
     let observer = new IntersectionObserver(callback, options)
 
     observer.observe(document.querySelector(".dims"))
-})()
+})();

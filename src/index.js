@@ -1,6 +1,6 @@
 import "./style.scss"
+import "./scripts/observer"
 import "./scripts/headline"
 import "./scripts/burgermenu"
 import "./images/aubergine-feta.png"
 import "./images/OST3.jpg"
-import "./scripts/observer"
