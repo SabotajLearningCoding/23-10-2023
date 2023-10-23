@@ -3,8 +3,15 @@
 	height: 200px;
 	background-color: lightskyblue;
 	margin-bottom: 1em;
+	transition: transform opacity 2s ease;
 }
 
 .dims{
-    color: #FFF;
+    transform: translateX(-200px);
+	opacity: 0.5;
+}
+
+.dims-on{
+	transform: translateX(200px);
+	opacity: 1;
 }

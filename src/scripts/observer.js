@@ -1,7 +1,7 @@
 export default (function() {
     let options = {
         rootMargin: "0px",
-        threshold: 1.0,
+        threshold: 0.75,
     }
 
     function callback(entries) {
@@ -9,7 +9,8 @@ export default (function() {
             if (!entry.isIntersecting) return // guard-clause
 
             if (entry.intersectionRatio >= 0.75) {
-                alert("BØH!");
+                entry.target.classList.remove("dims")
+                entry.target.classList.add("dims-on")
             }
         })
     }
